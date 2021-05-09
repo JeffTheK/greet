@@ -9,20 +9,6 @@ task :default do
   Rake::Task['gem'].execute
 end
 
-task :build do
-  system('gem build greet.gemspec')
-end
-
-task :install do
-  system("sudo gem install ./greet-#{Greet::VERSION}.gem")
-end
-
-task :gem do
-  Rake::Task['build'].execute
-  Rake::Task['install'].execute
-  system('rake clean')
-end
-
 task :test do
   system('rake clean')
   system('ruby test/run.rb')
