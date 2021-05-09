@@ -8,6 +8,10 @@ module Greet
     puts('enter your username')
     username = gets.chomp
 
+    greet(name, age, username)
+  end
+
+  def self.greet(name, age, username)
     puts("your name is #{name}, you are #{age} years old, and your username is #{username}")
   end
 end
