@@ -12,5 +12,5 @@ end
 
 task :test do
   system('rake clean')
-  system('ruby test/run.rb')
+  system('ruby test/greet_tc.rb')
 end
