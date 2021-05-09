@@ -9,6 +9,10 @@ task :default do
   Rake::Task['gem'].execute
 end
 
+task :run do
+  system('ruby lib/greet.rb')
+end
+
 task :test do
   system('rake clean')
   system('ruby test/run.rb')
