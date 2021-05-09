@@ -1,8 +1,5 @@
 require 'rake/clean'
 
-require_relative 'lib/greet/version.rb'
-
-CLEAN.include "greet-#{Greet::VERSION}.gem"
 CLEAN.include "test/tmp/**/*"
 
 task :default do
